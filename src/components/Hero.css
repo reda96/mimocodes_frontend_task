@@ -1,0 +1,57 @@
+.heroSection {
+  background: url("/src//assets//519164.jpg") no-repeat;
+  background-position: right 20px top -100px;
+
+  background-size: contain;
+  min-height: 700px;
+  width: 100%;
+  text-align: start;
+  color: white;
+}
+
+.wrapper {
+  width: 1000px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 0 50px;
+  color: white;
+  padding: 30px 60px;
+  padding-right: 0;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  border-radius: 10px;
+}
+.empty {
+  width: 10px;
+}
+.item {
+  /* background-color: #00d9e1; */
+  padding: 0px 10px;
+  border-radius: 20px;
+}
+.wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.animate-slideup {
+  padding-left: 40px;
+  margin-top: 100px;
+  max-width: 1000px;
+  height: 250px;
+  overflow: hidden;
+  transform: translateY(-200px);
+  animation: slideup 1000ms cubic-bezier(0.65, 0, 0.35, 1) 1 forwards;
+  transform-origin: top center;
+}
+
+@keyframes slideup {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
