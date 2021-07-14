@@ -1,0 +1,39 @@
+.menu {
+  grid-area: menu;
+  border: 0.5px solid white;
+  border-radius: 10px;
+  background-color: white;
+}
+.photo {
+  grid-area: photo;
+}
+.photo img {
+  border: 0.5px solid white;
+  border-radius: 10px;
+}
+.right {
+  grid-area: right;
+  border: 0.5px solid white;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+}
+li {
+  list-style: none;
+  color: black;
+}
+li:hover {
+  color: blue !important;
+}
+.grid-container {
+  display: grid;
+  margin-top: 100px;
+  width: 100%;
+
+  grid-template-areas: "menu menu photo photo right right";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 400px;
+  grid-gap: 10px;
+
+  padding: 10px;
+}

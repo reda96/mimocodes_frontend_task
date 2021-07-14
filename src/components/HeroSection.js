@@ -4,6 +4,7 @@ import Product1 from "../assets/cs-sm-600.jpg";
 import Product2 from "../assets/images.jpg";
 import Product3 from "../assets/IMHX2019_BoxPicking-Osaro-1170x877.jpg";
 import Product4 from "../assets/MMCI-robotics-1120product.jpg";
+import Product0 from "../assets/talking.jpg";
 const HeroSection = () => {
   return (
     <div>
@@ -45,6 +46,16 @@ const HeroSection = () => {
         </h1>
 
         <div className="wrapper">
+          <div className="item">
+            <img
+              className="item"
+              height="240px"
+              width="250px"
+              src={Product0}
+              alt="Product1"
+            />
+            <h3>Talking Robot</h3>
+          </div>
           <div className="item">
             <img
               className="item"
