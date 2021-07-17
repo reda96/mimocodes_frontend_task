@@ -4,6 +4,11 @@
   border-radius: 10px;
   background-color: white;
 }
+.menu li {
+  font-size: small;
+  width: 200px;
+  margin-top: 10px;
+}
 .photo {
   grid-area: photo;
 }

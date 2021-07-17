@@ -12,6 +12,8 @@ const Navbar = () => {
         right: 0,
         width: "100%",
         zIndex: 99,
+        backgroundColor: "#333",
+        boxShadow: " 0 2px 4px 0 #333",
       }}
     >
       <div className="container-fluid">
