@@ -31,7 +31,11 @@ const Dashboard = (props) => {
           alt="talking robot"
         />
       </div>
-      <div className="right">{props.list[Active].desc}</div>
+
+      <div className="right">
+        <h1>{props.list[Active].name}</h1>
+        {props.list[Active].desc}
+      </div>
     </div>
   );
 };
