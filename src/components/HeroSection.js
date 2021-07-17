@@ -5,6 +5,8 @@ import Product2 from "../assets/images.jpg";
 import Product3 from "../assets/IMHX2019_BoxPicking-Osaro-1170x877.jpg";
 import Product4 from "../assets/MMCI-robotics-1120product.jpg";
 import Product0 from "../assets/talking.jpg";
+import Robot from "../assets/robot.png";
+import Human from "../assets/human.png";
 const HeroSection = () => {
   return (
     <div>
@@ -18,6 +20,12 @@ const HeroSection = () => {
             remote for direct human intervention, providing time and cost
             efficient operations.
           </p>
+        </div>
+
+        <div className="animate-slideup2">
+          <img width="150px" height="150px" src={Human} alt="humanFace" />{" "}
+          <h1 style={{ marginTop: "30px" }}>......VS......</h1>
+          <img width="150px" height="150px" src={Robot} alt="robotFace" />
         </div>
       </div>
 
@@ -40,7 +48,7 @@ const HeroSection = () => {
           <i className="fas fa-tractor fa-10x "></i>
         </div>
       </div>
-      <div>
+      <div className="products">
         <h1 style={{ color: "white", textAlign: "center", margin: "20px" }}>
           Products
         </h1>

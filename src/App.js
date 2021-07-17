@@ -62,6 +62,10 @@ Less waste is produced and the robots are able to find and separate the small pa
           />
         </Switch>
       </Router>
+
+      <footer>
+        <p>Copyright &copy; 2020 The Golden Roast.</p>
+      </footer>
     </div>
   );
 }
