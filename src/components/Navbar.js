@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+
 import { Link, BrowserRouter as Router } from "react-router-dom";
 const Navbar = () => {
+  const [Active, setActive] = useState("Home");
   return (
     <nav
       className="navbar navbar-expand-lg navbar-dark"
@@ -33,18 +35,31 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link className="nav-link active" to="/">
+            <li onClick={() => setActive("Home")} className="nav-item">
+              <Link
+                className={Active === "Home" ? "nav-link active" : "nav-link"}
+                to="/"
+              >
                 Home
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/dashboard">
+            <li onClick={() => setActive("Dashboard")} className="nav-item">
+              <Link
+                className={
+                  Active === "Dashboard" ? "nav-link active" : "nav-link"
+                }
+                to="/dashboard"
+              >
                 Dashboard
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/prices">
+            <li onClick={() => setActive("Pricing")} className="nav-item">
+              <Link
+                className={
+                  Active === "Pricing" ? "nav-link active" : "nav-link"
+                }
+                to="/prices"
+              >
                 Pricing
               </Link>
             </li>
